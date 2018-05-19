@@ -881,11 +881,12 @@ class Select extends Component {
   renderTreeData(props) {
     const validProps = props || this.props;
     if (validProps.treeData) {
-      if (props && props.treeData === this.props.treeData && this.renderedTreeData) {
-        // cache and use pre data.
-        this._cachetreeData = true;
-        return this.renderedTreeData;
-      }
+  //   if (props && props.treeData === this.props.treeData && this.renderedTreeData) {
+  //      // cache and use pre data.
+  //      this._cachetreeData = true;
+  //      return this.renderedTreeData;
+  //  } 
+    
       this._cachetreeData = false;
       let treeData = [...validProps.treeData];
       // process treeDataSimpleMode
